@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Distribuciones</title>
+    < style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 420px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5A2D82, #E56AA6);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .btn-catalogo {
+            background: #5A2D82;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #E56AA6;
+            color: white;
+        }
+
+        .btn-precios {
+            background: #7d4aa8;
+            color: white;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #5A2D82;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .category {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e0d2ef;
+            font-weight: bold;
+        }
+
+        .cta {
+            background: #E56AA6;
+            color: white;
+            padding: 25px 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>STARK</h1>
+        <h2>Distribuciones</h2>
+        <p>Firmes como el Norte</p>
+    </header>
+
+    <a href="#" class="btn btn-catalogo">📦 Ver Catálogo (Próximamente)</a>
+
+    <a href="https://wa.me/57TU_NUMERO?text=Hola,%20quiero%20información%20sobre%20los%20productos%20de%20Stark%20Distribuciones"
+       class="btn btn-whatsapp">
+       📲 Pedir por WhatsApp
+    </a>
+
+    <a href="#" class="btn btn-precios">📄 Lista de precios</a>
+
+    <div class="section">
+        <h3>Categorías</h3>
+        <div class="categories">
+            <div class="category">🧼 Aseo</div>
+            <div class="category">🥫 Alimentos</div>
+            <div class="category">🏠 Hogar</div>
+            <div class="category">🧃 Bebidas</div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h3>¿Eres tienda o mayorista?</h3>
+        <p>Escríbenos y recibe atención personalizada</p>
+        <br>
+        <a href="https://wa.me/573193173268" class="btn btn-whatsapp">
+            Hablar por WhatsApp
+        </a>
+    </div>
+
+    <footer>
+        © 2026 Stark Distribuciones <br>
+        Todos los derechos reservados
+    </footer>
+
+</div>
+
+</body>
+</html>
