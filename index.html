@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stark Distribuciones</title>
+
     <style>
         * {
             margin: 0;
@@ -104,6 +105,14 @@
             text-align: center;
             border: 2px solid #e0d2ef;
             font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
 
         .cta {
@@ -123,6 +132,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
@@ -134,23 +144,25 @@
     </header>
 
     <a href="catalogo.html" class="btn btn-catalogo">
-  📦 Ver Catálogo
-</a>
+        📦 Ver Catálogo
+    </a>
 
     <a href="https://wa.me/573193173268?text=Hola,%20quiero%20información%20sobre%20los%20productos%20de%20Stark%20Distribuciones"
        class="btn btn-whatsapp">
-       📲 Pedir por WhatsApp
+        📲 Pedir por WhatsApp
     </a>
 
-    <a href="#" class="btn btn-precios">📄 Lista de precios</a>
+    <a href="#" class="btn btn-precios">
+        📄 Lista de precios
+    </a>
 
     <div class="section">
         <h3>Categorías</h3>
         <div class="categories">
-            <div class="category">💧 Hidratantes</div>
-            <div class="category">🧪 Serums</div>
-            <div class="category">🛡️ Bloqueadores</div>
-            <div class="category">🌿 Tónicos</div>
+            <a href="catalogo.html?categoria=hidratantes" class="category">💧 Hidratantes</a>
+            <a href="catalogo.html?categoria=serums" class="category">🧪 Serums</a>
+            <a href="catalogo.html?categoria=bloqueadores" class="category">🛡️ Bloqueadores</a>
+            <a href="catalogo.html?categoria=tonicos" class="category">🌿 Tónicos</a>
         </div>
     </div>
 
@@ -172,8 +184,3 @@
 
 </body>
 </html>
-
-
-
-
-
