@@ -70,6 +70,10 @@
       color: white;
     }
 
+    .filtros button:hover {
+      background: #E56AA6;
+    }
+
     .catalogo {
       max-width: 1200px;
       margin: auto;
@@ -87,6 +91,11 @@
       flex-direction: column;
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       border: 2px solid #e0d2ef;
+      transition: transform 0.25s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
     }
 
     .producto img {
@@ -94,6 +103,7 @@
       max-height: 260px;
       object-fit: contain;
       padding: 15px;
+      background: #fff;
     }
 
     .info {
@@ -112,7 +122,7 @@
       font-size: 14px;
       color: #555;
       margin-bottom: 14px;
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     .precio {
@@ -123,13 +133,20 @@
     }
 
     .btn {
+      text-align: center;
       padding: 14px;
       background: linear-gradient(135deg, #5A2D82, #E56AA6);
       color: white;
       text-decoration: none;
       font-weight: bold;
-      text-align: center;
       border-radius: 0 0 18px 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
@@ -147,10 +164,10 @@
 
 <div class="filtros">
   <button onclick="filtrar('todos')">Todos</button>
-  <button onclick="filtrar('hidratantes')">💧 Hidratantes</button>
-  <button onclick="filtrar('serums')">🧪 Serums</button>
-  <button onclick="filtrar('bloqueadores')">🛡 Bloqueadores</button>
-  <button onclick="filtrar('tonicos')">🌿 Tónicos</button>
+  <button onclick="filtrar('hidratantes')">Hidratantes</button>
+  <button onclick="filtrar('serums')">Serums</button>
+  <button onclick="filtrar('bloqueadores')">Bloqueadores</button>
+  <button onclick="filtrar('tonicos')">Tónicos</button>
 </div>
 
 <section class="catalogo">
@@ -160,11 +177,7 @@
     <img src="vitaminac.jpg" alt="Vitamina C">
     <div class="info">
       <h3>Vitamina C</h3>
-      <p>
-        ✨ Ilumina la piel<br>
-        🛡️ Antioxidante<br>
-        🌿 Con aloe y caléndula
-      </p>
+      <p>Serum antioxidante que ilumina la piel, unifica el tono y protege del daño ambiental.</p>
       <div class="precio">$40.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20la%20Vitamina%20C" target="_blank">Pedir por WhatsApp</a>
@@ -174,11 +187,7 @@
     <img src="niacinamida.jpg" alt="Niacinamida">
     <div class="info">
       <h3>Niacinamida</h3>
-      <p>
-        🧬 Regula grasa<br>
-        ✨ Mejora textura<br>
-        🔬 Vitamina B3
-      </p>
+      <p>Regula el exceso de grasa, mejora la textura y fortalece la barrera cutánea.</p>
       <div class="precio">$48.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20la%20Niacinamida" target="_blank">Pedir por WhatsApp</a>
@@ -188,11 +197,7 @@
     <img src="retinol.jpg" alt="Retinol">
     <div class="info">
       <h3>Retinol</h3>
-      <p>
-        🔁 Rejuvenece la piel<br>
-        💪 Estimula colágeno<br>
-        ✨ Más firme y luminosa
-      </p>
+      <p>Estimula la renovación celular, mejora la firmeza y aporta luminosidad.</p>
       <div class="precio">$48.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Retinol" target="_blank">Pedir por WhatsApp</a>
@@ -203,11 +208,7 @@
     <img src="hydraplus.jpg" alt="Hydra Plus">
     <div class="info">
       <h3>Hydra Plus</h3>
-      <p>
-        💧 Hidratación profunda<br>
-        ⏳ Efecto anti-edad<br>
-        ✨ Piel suave y fresca
-      </p>
+      <p>Hidratación profunda que suaviza la piel y ayuda a prevenir signos de la edad.</p>
       <div class="precio">$42.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20Hydra%20Plus" target="_blank">Pedir por WhatsApp</a>
@@ -218,14 +219,10 @@
     <img src="despigmentante.jpg" alt="Tónico Facial">
     <div class="info">
       <h3>Tónico Facial</h3>
-      <p>
-        🌿 Despigmentante<br>
-        🎯 Unifica el tono<br>
-        🧼 Controla grasa
-      </p>
+      <p>Unifica el tono de la piel, controla la grasa y ayuda a reducir manchas visibles.</p>
       <div class="precio">$35.000</div>
     </div>
-    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Tónico" target="_blank">Pedir por WhatsApp</a>
+    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Tónico%20Facial" target="_blank">Pedir por WhatsApp</a>
   </div>
 
   <!-- BLOQUEADORES -->
@@ -233,11 +230,7 @@
     <img src="eucerin.jpg" alt="Bloqueador Solar">
     <div class="info">
       <h3>Bloqueador Solar</h3>
-      <p>
-        ☀️ Protección UVA/UVB<br>
-        🛡️ Uso diario<br>
-        🌊 Textura ligera
-      </p>
+      <p>Protección solar de amplio espectro con textura ligera para uso diario.</p>
       <div class="precio">$120.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Bloqueador%20Solar" target="_blank">Pedir por WhatsApp</a>
@@ -245,14 +238,17 @@
 
 </section>
 
+<footer>
+  © 2026 Stark Distribuciones · Catálogo digital
+</footer>
+
 <script>
 function filtrar(categoria) {
-  const productos = document.querySelectorAll('.producto');
-  productos.forEach(producto => {
+  document.querySelectorAll('.producto').forEach(producto => {
     producto.style.display =
       categoria === 'todos' || producto.classList.contains(categoria)
-        ? 'flex'
-        : 'none';
+      ? 'flex'
+      : 'none';
   });
 }
 </script>
